@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estacionamento HT</title>
     <link rel="stylesheet" href="../style/formularios.css">
+    <script src="./../models/veiculo.js"></script>
+    <script src="./../controllers/registrar.js"></script>
 </head>
 <body>
     <nav>
@@ -32,14 +34,14 @@
         <input type="text" name="cor" id="cor" placeholder="cor"><br>
 
         <label for="tipo">Selecione</label>
-        <select>
+        <select id="tipo">
             <option value=""></option>
             <option value="carro">Carro</option>
             <option value="moto">Moto</option>
             <option value="caminhao">Caminhão</option>
         </select><br>
         
-        <button>Cadastrar</button>
+        <button onclick="Resgistrodeveiculo.lerEadicionar()">Cadastrar</button>
     </fieldset>
     </div>
 </body>
